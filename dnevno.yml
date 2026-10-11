@@ -1,7 +1,3 @@
-# Spremi kao .github/workflows/dnevno.yml u repozitoriju.
-# GitHub raspored radi u UTC. Zato se pokreće u 3, 4 i 5 sati UTC, a svaki korak provjerava
-# stvarni sat u Zagrebu: prikupljanje se događa u 05:xx, mail u 06:xx (ljeti i zimi).
-# GitHub zna zakasniti pokretanje za nekoliko minuta, pa vrijeme nije na sekundu točno.
 name: Dnevna ponuda stanova
 
 on:
@@ -9,7 +5,7 @@ on:
     - cron: "0 3 * * *"
     - cron: "0 4 * * *"
     - cron: "0 5 * * *"
-  workflow_dispatch:   # ručno pokretanje (izvršava i prikupljanje i mail)
+  workflow_dispatch:
 
 permissions:
   contents: write
