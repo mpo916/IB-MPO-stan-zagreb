@@ -18,7 +18,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (osobni alat za praćenje oglasa)", "Accept-Language": "hr"}
+HEADERS = {"User-Agent": "Mozilla/5.0 (osobni alat za pracenje oglasa)", "Accept-Language": "hr"}
 DELAY = 2.0
 MAX_PAGES = 8
 M2_MIN, M2_MAX = 50, 110
