@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 
 BASE = "https://eurovilla.hr"
 START = BASE + "/pretraga/prodaja-stan-zagreb/"
-HEADERS = {"User-Agent": "Mozilla/5.0 (osobni alat za praćenje oglasa)", "Accept-Language": "hr"}
+HEADERS = {"User-Agent": "Mozilla/5.0 (osobni alat za pracenje oglasa)", "Accept-Language": "hr"}
 DELAY = 2.0           # sekunde između zahtjeva (budi pristojan prema stranici)
 MAX_PAGES = 15
 M2_MIN, M2_MAX = 50, 110   # unaprijed odbaci stanove izvan ovog raspona
