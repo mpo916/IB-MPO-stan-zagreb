@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="hr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stan u Zagrebu – dnevna ponuda</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f5;--fg:#16202c;--mut:#5d6b7c;--card:#fff;--line:#d5dce5;--acc:#1b4f9c;--ocher:#b7820f;--ok:#1d7a4d;--no:#a33a3a;--land:#e4e9ef;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10161e;--fg:#e6ebf2;--mut:#93a1b3;--card:#192230;--line:#2c394b;--acc:#6ea2f0;--ocher:#e0b04a;--ok:#5cc58e;--no:#e88a8a;--land:#1c2735}}
+:root[data-theme="dark"]{--bg:#10161e;--fg:#e6ebf2;--mut:#93a1b3;--card:#192230;--line:#2c394b;--acc:#6ea2f0;--ocher:#e0b04a;--ok:#5cc58e;--no:#e88a8a;--land:#1c2735}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 "Public Sans",system-ui,sans-serif}
+header{padding:18px 16px 0;max-width:1200px;margin:auto}
+h1{font-size:24px;font-weight:800;margin:0 0 2px}
+.sub{color:var(--mut);margin:0 0 10px}
+.demo{background:var(--ocher);color:#fff;padding:6px 10px;border-radius:6px;font-size:13px;display:inline-block;margin-bottom:10px}
+nav{display:flex;gap:4px;border-bottom:2px solid var(--line)}
+nav button{background:none;border:0;padding:10px 16px;font:inherit;font-weight:600;color:var(--mut);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
+nav button.on{color:var(--acc);border-color:var(--acc)}
+main{max-width:1200px;margin:auto;padding:14px 16px 40px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center}
+input,select,textarea,button.b{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:6px 8px}
+button.b{background:var(--acc);color:#fff;border-color:var(--acc);cursor:pointer;font-weight:600}
+button.b.g{background:var(--card);color:var(--fg);border-color:var(--line)}
+.w{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:1080px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:13px;color:var(--mut);font-weight:600;white-space:nowrap}
+tr.no td{opacity:.5}tr.c td{background:color-mix(in srgb,var(--ok) 9%,transparent)}
+.sc{display:inline-grid;place-items:center;min-width:52px;height:30px;border-radius:15px;color:#fff;font-weight:800;background:var(--acc)}
+.sc.l{background:var(--mut)}.sc.h{background:var(--ok)}
+.tag{font-size:12px;border:1px solid var(--ocher);color:var(--ocher);border-radius:10px;padding:1px 7px;white-space:nowrap}
+.mut{color:var(--mut);font-size:13px}
+td input[type=text]{width:190px}
+td input[type=checkbox]{width:20px;height:20px;accent-color:var(--acc)}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px}
+label{display:block;font-weight:600;font-size:13px}label input,label textarea{width:100%;margin-top:3px;font-weight:400}
+.mapw{position:relative;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+#tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);padding:6px 10px;border-radius:6px;font-size:13px;display:none;white-space:nowrap}
+.pin{cursor:pointer;stroke:var(--card);stroke-width:2}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+</style></head><body>
+<header>
+<h1>Stan u Zagrebu</h1>
+<p class="sub">Dnevna ponuda za nas dvoje: samo novoobjavljeni stanovi, poredani prema podudaranju s kriterijima.</p>
+<nav><button data-t="list" class="on">Lista</button><button data-t="map">Karta</button><button data-t="crit">Kriteriji</button></nav>
+</header>
+<main>
+<section id="v-list">
+<div class="bar">
+<select id="fd"><option value="0">Danas</option><option value="1">Jučer</option><option value="2">Prekjučer</option><option value="all">Svi dani</option></select>
+<input id="fq" type="search" placeholder="Pretraži kvart, agenciju…">
+<select id="fa"><option value="">Svi kvartovi</option></select>
+<input id="fp" type="number" placeholder="Max cijena €" style="width:130px">
+<input id="fs" type="number" step="0.1" min="1" max="5" placeholder="Min ocjena" style="width:110px">
+<label style="display:flex;gap:6px;align-items:center;font-weight:400"><input id="fh" type="checkbox" style="width:auto;margin:0" checked> sakrij „nije ok“</label>
+<span id="cnt" class="mut"></span>
+</div>
+<div class="w"><table><thead><tr><th>Ocjena</th><th>Kvart</th><th>m²</th><th>Cijena</th><th>€/m²</th><th>Agencija / vlasnik</th><th>Kontakt</th><th>Stanje</th><th>Kontaktirati</th><th>Nije ok</th><th>Komentar</th></tr></thead><tbody id="rows"></tbody></table></div>
+</section>
+<section id="v-map" hidden>
+<p class="mut">Shematska karta (prikazuje trenutno filtrirane stanove). Pređi mišem ili dodirni pin za osnovne podatke.</p>
+<div class="mapw"><svg viewBox="0 0 600 380" id="mp" role="img" aria-label="Shematska karta Zagreba"></svg><div id="tip"></div></div>
+</section>
+<section id="v-crit" hidden>
+<p class="mut">Promjena kriterija odmah preračunava ocjene. Kvartove odvoji zarezom.</p>
+<div class="g2">
+<label>Površina od (m²)<input id="c-min" type="number"></label>
+<label>Površina do (m²)<input id="c-max" type="number"></label>
+<label>Opcionalno do (m²)<input id="c-opt" type="number"></label>
+<label>Najviši kat (uz lift)<input id="c-maxFloor" type="number"></label>
+<label>Bez lifta do kata<input id="c-noLift" type="number"></label>
+<label>Najviša cijena (€, 0 = bez granice)<input id="c-maxPrice" type="number" step="5000"></label>
+<label>Prioritet 1 – kvartovi<textarea id="c-p1" rows="5"></textarea></label>
+<label>Prioritet 2 – kvartovi<textarea id="c-p2" rows="5"></textarea></label>
+<label>Prioritet 3 – kvartovi<textarea id="c-p3" rows="5"></textarea></label>
+</div>
+<div class="bar" style="margin-top:12px"><button class="b" id="sv">Spremi kriterije</button><button class="b g" id="rs">Vrati početne</button></div>
+</section>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}};
+const sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+const DEF={min:58,max:80,opt:100,maxFloor:6,noLift:1,maxPrice:380000,
+p1:"Horvati, Jarun, Knežija, Srednjaci, Vrbani, Bundek, Središće, Cvjetno naselje, Kanal, Kruge, Martinovka, Savica, Sigečica, Trnje, Vrbik, Špansko, Trešnjevka, Rudeš",
+p2:"Britanac, Centar, Gupčeva zvijezda, Ksaver, Medveščak, Pantovčak, Prekrižje, Ribnjak, Šalata, Tuškanac, Voćarsko naselje, Svetice, Lanište",
+p3:"Mirogoj, Zelengaj, Donji Bukovac, Maksimir, Srebrnjak, Mlinovi, Šestine, Črnomerec, Bijenik, Sveti Duh, Šestinski dol, Vrhovec, Završje, Gračani"};
+let C=Object.assign({},DEF,ld('crit',{})),M=ld('marks',{});
+const XY={"Trešnjevka":[200,230],"Jarun":[95,295],"Knežija":[300,215],"Centar":[320,170],"Špansko":[60,190],"Medveščak":[340,120],"Maksimir":[440,100],"Trnje":[340,265],"Sigečica":[235,305],"Šestine":[250,50],"Vrbani":[205,265]};
+let L=[];
+const lst=k=>C[k].split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
+function score(l){
+const a=l.area.toLowerCase(),loc=lst('p1').includes(a)?1:lst('p2').includes(a)?.7:lst('p3').includes(a)?.4:.1;
+const size=l.m2>=C.min&&l.m2<=C.max?1:l.m2>C.max&&l.m2<=C.opt?.6:.1;
+const fl=l.fl==null?.5:l.fl<=C.noLift||(l.fl<=C.maxFloor&&l.lift)?1:0;
+const era=l.yr>=2021||l.cond==="Novogradnja"?1:l.yr>=1970?.7:l.yr>=1920?.4:.1;
+const ex=(l.balc?.5:0)+(l.park?.5:0);
+const pr=!C.maxPrice||l.price<=C.maxPrice?1:l.price<=C.maxPrice*1.1?.4:0;
+return 1+4*(.3*loc+.25*size+.15*fl+.1*era+.1*ex+.1*pr);}
+const mk=id=>M[id]||(M[id]={c:0,n:0,t:''});
+const eur=n=>n.toLocaleString('hr-HR')+' €';
+function view(){
+const d=$('#fd').value,q=$('#fq').value.toLowerCase(),a=$('#fa').value,p=+$('#fp').value||1e12,s=+$('#fs').value||0,h=$('#fh').checked;
+const cnt={};L.forEach(l=>l.dup&&(cnt[l.dup]=(cnt[l.dup]||0)+1));
+return L.map(l=>({...l,sc:score(l),pm:Math.round(l.price/l.m2)})).filter(l=>
+(d==='all'||l.day==d)&&(!a||l.area===a)&&l.price<=p&&l.sc>=s&&(!h||!mk(l.id).n)&&
+(l.area+l.ag+l.cond).toLowerCase().includes(q)).sort((x,y)=>y.sc-x.sc||x.pm-y.pm).map(l=>({...l,dn:cnt[l.dup]||0}));}
+function render(){
+const v=view();$('#cnt').textContent=v.length+' stanova';
+$('#rows').innerHTML=v.map(l=>{const m=mk(l.id),f=l.sc.toFixed(2).replace('.',',');
+return `<tr class="${m.n?'no':m.c?'c':''}"><td><span class="sc ${l.sc>=4?'h':l.sc<3?'l':''}">${f}</span></td>
+<td>${l.area}<div class="mut">${l.fl==null?'kat nije naveden':l.fl===0?'prizemlje':l.fl+'. kat'}${l.lift?', lift':''}, ${l.yr}.</div></td><td>${l.m2}</td><td><b${C.maxPrice&&l.price>C.maxPrice?' style="color:var(--no)"':''}>${eur(l.price)}</b></td><td>${eur(l.pm)}</td>
+<td>${l.url?`<a href="${esc(l.url)}" target="_blank" rel="noopener">${l.ag}</a>`:l.ag}${l.dup?` <span class="tag">Duplikat ×${l.dn}</span>`:''}<div class="mut">${l.src}</div></td><td>${l.tel}</td><td>${l.cond}</td>
+<td><input type="checkbox" data-id="${l.id}" data-k="c" aria-label="Kontaktirati" ${m.c?'checked':''}></td>
+<td><input type="checkbox" data-id="${l.id}" data-k="n" aria-label="Kontaktirano, nije ok" ${m.n?'checked':''}></td>
+<td><input type="text" maxlength="100" data-id="${l.id}" data-k="t" value="${esc(m.t)}" placeholder="Komentar (do 100 znakova)"></td></tr>`}).join('')||'<tr><td colspan="11" class="mut">Nema stanova za odabrane filtere. Promijeni dan ili ukloni filtere.</td></tr>';
+const mp=$('#mp');
+mp.innerHTML=`<rect width="600" height="380" fill="var(--land)"/><path d="M0,335 C120,350 230,325 330,335 S520,350 600,330 L600,380 L0,380Z" fill="var(--acc)" opacity=".25"/><text x="470" y="368" fill="var(--mut)" font-size="12">Sava</text><text x="20" y="30" fill="var(--mut)" font-size="12">Medvednica ↑</text>`+
+Object.entries(XY).map(([n,[x,y]])=>`<text x="${x+10}" y="${y+4}" fill="var(--mut)" font-size="10">${n}</text>`).join('')+
+v.map((l,i)=>{const[x,y]=XY[l.area]||[300,200];const dx=(i%3-1)*14,dy=(i%2)*10;
+return `<circle class="pin" cx="${x+dx}" cy="${y+dy}" r="9" fill="${l.sc>=4?'var(--ok)':l.sc<3?'var(--mut)':'var(--acc)'}" data-tip="${l.area} · ${l.m2} m² · ${eur(l.price)} · ocjena ${l.sc.toFixed(2).replace('.',',')}"/>`}).join('');
+}
+const tip=$('#tip');
+$('#mp').addEventListener('mouseover',e=>{const t=e.target.dataset.tip;if(!t){tip.style.display='none';return}tip.textContent=t;tip.style.display='block'});
+$('#mp').addEventListener('click',e=>{const t=e.target.dataset.tip;tip.textContent=t||'';tip.style.display=t?'block':'none'});
+$('#mp').addEventListener('mousemove',e=>{const r=$('.mapw').getBoundingClientRect();tip.style.left=Math.min(e.clientX-r.left+12,r.width-240)+'px';tip.style.top=(e.clientY-r.top+12)+'px'});
+$('#rows').addEventListener('input',e=>{const i=e.target.dataset;if(!i.id)return;const m=mk(i.id);
+if(i.k==='t'){m.t=e.target.value;sv('marks',M);return}
+m[i.k]=e.target.checked?1:0;if(i.k==='n'&&m.n)m.c=0;sv('marks',M);render();});
+['fd','fq','fa','fp','fs','fh'].forEach(i=>$('#'+i).addEventListener('input',render));
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('on',x===b));
+['list','map','crit'].forEach(t=>$('#v-'+t).hidden=t!==b.dataset.t)});
+const KEYS=Object.keys(DEF);
+function fill(){KEYS.forEach(k=>$('#c-'+k).value=C[k])}
+$('#sv').onclick=()=>{KEYS.forEach(k=>C[k]=typeof DEF[k]==='number'?+$('#c-'+k).value:$('#c-'+k).value);sv('crit',C);render();$('#sv').textContent='Spremljeno';setTimeout(()=>$('#sv').textContent='Spremi kriterije',1200)};
+$('#rs').onclick=()=>{C=Object.assign({},DEF);sv('crit',C);fill();render()};
+fill();
+fetch('data/ponuda.json').then(r=>r.json()).then(d=>{
+const t0=new Date(new Date().toDateString());
+L=d.map(a=>({id:a.id,area:a.area,m2:a.m2,price:a.price,ag:a.ag,tel:a.tel||'',cond:a.cond,fl:a.fl,lift:a.lift,yr:a.yr,balc:a.balc,park:a.park,src:a.src,url:a.url,dup:a.dup||'',day:Math.round((t0-new Date(a.first_seen))/864e5)}));
+$('#fa').innerHTML+=[...new Set(L.map(l=>l.area))].sort().map(a=>`<option>${a}</option>`).join('');
+render();}).catch(()=>{$('#rows').innerHTML='<tr><td colspan="11" class="mut">Podaci još nisu dostupni (data/ponuda.json). Pokreni skripte za prikupljanje.</td></tr>'});
+</script></body></html>

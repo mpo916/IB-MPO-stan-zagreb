@@ -1,0 +1,54 @@
+# Spremi kao .github/workflows/dnevno.yml u repozitoriju.
+# GitHub raspored radi u UTC. Zato se pokreće u 3, 4 i 5 sati UTC, a svaki korak provjerava
+# stvarni sat u Zagrebu: prikupljanje se događa u 05:xx, mail u 06:xx (ljeti i zimi).
+# GitHub zna zakasniti pokretanje za nekoliko minuta, pa vrijeme nije na sekundu točno.
+name: Dnevna ponuda stanova
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+    - cron: "0 4 * * *"
+    - cron: "0 5 * * *"
+  workflow_dispatch:   # ručno pokretanje (izvršava i prikupljanje i mail)
+
+permissions:
+  contents: write
+
+jobs:
+  dnevno:
+    runs-on: ubuntu-latest
+    steps:
+      - id: sat
+        run: echo "h=$(TZ=Europe/Zagreb date +%H)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests beautifulsoup4
+
+      - name: Prikupi oglase (05:00)
+        if: github.event_name == 'workflow_dispatch' || steps.sat.outputs.h == '05'
+        run: |
+          python eurovilla_scraper.py
+          python agencije_scraper.py
+
+      - name: Spremi podatke u repozitorij
+        if: github.event_name == 'workflow_dispatch' || steps.sat.outputs.h == '05'
+        run: |
+          git config user.name "dnevna-ponuda"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git commit -m "Ponuda $(date -u +%F)" || echo "Nema promjena"
+          git push
+
+      - name: Pošalji mail (06:00)
+        if: github.event_name == 'workflow_dispatch' || steps.sat.outputs.h == '06'
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python posalji_mail.py
