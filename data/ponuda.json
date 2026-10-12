@@ -80,6 +80,26 @@
   "dup": ""
  },
  {
+  "id": "ev-587396",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-jarun-atraktivan-cetverosoban-penthouse-s-tri-velike-terase-garazom-i-parkingom/587396/",
+  "title": "Novogradnja Zagreb, Jarun, atraktivan četverosoban penthouse s tri velike terase, garažom i parkingom",
+  "area": "Novogradnja Zagreb",
+  "m2": 99.0,
+  "price": 495000,
+  "cond": "Novogradnja",
+  "first_seen": "2026-10-11",
+  "tel": "+385913330666",
+  "fl": 2,
+  "lift": 1,
+  "yr": 2020,
+  "balc": 1,
+  "park": 1,
+  "pm": 5000,
+  "dup": ""
+ },
+ {
   "id": "ev-900649",
   "src": "eurovilla.hr",
   "ag": "Eurovilla",
@@ -397,26 +417,6 @@
   "balc": 1,
   "park": 1,
   "pm": 4107,
-  "dup": ""
- },
- {
-  "id": "ev-587396",
-  "src": "eurovilla.hr",
-  "ag": "Eurovilla",
-  "url": "https://eurovilla.hr/nekretnina/zagreb-jarun-atraktivan-cetverosoban-penthouse-s-tri-velike-terase-garazom-i-parkingom/587396/",
-  "title": "Novogradnja Zagreb, Jarun, atraktivan četverosoban penthouse s tri velike terase, garažom i parkingom",
-  "area": "Novogradnja Zagreb",
-  "m2": 99.0,
-  "price": 500000,
-  "cond": "Novogradnja",
-  "first_seen": "2026-10-11",
-  "tel": "+385913330666",
-  "fl": 2,
-  "lift": 1,
-  "yr": 2020,
-  "balc": 1,
-  "park": 1,
-  "pm": 5051,
   "dup": ""
  },
  {
