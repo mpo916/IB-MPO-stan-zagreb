@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "id": "ev-700362",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-europski-trg-trosoban-novoureden-stan-81-m2/700362/",
+  "title": "Novo Zagreb, Europski trg, trosoban novouređen stan 81 m²",
+  "area": "Novo Zagreb",
+  "m2": 82.0,
+  "price": 730000,
+  "cond": "Nepoznato",
+  "first_seen": "2026-10-13",
+  "tel": "+385916022278",
+  "fl": 1,
+  "lift": 1,
+  "yr": 0,
+  "balc": 1,
+  "park": 1,
+  "pm": 8902,
+  "dup": ""
+ },
+ {
+  "id": "ev-671163",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/novi-zagreb-jaruscica-lijepi-trosobni-stan-68-m2/671163/",
+  "title": "Novo Novi Zagreb, Jaruščica, lijepi trosobni stan, 68 m²",
+  "area": "Novo Novi Zagreb",
+  "m2": 68.0,
+  "price": 249000,
+  "cond": "Nepoznato",
+  "first_seen": "2026-10-13",
+  "tel": "+38598484595",
+  "fl": 2,
+  "lift": 0,
+  "yr": 0,
+  "balc": 1,
+  "park": 1,
+  "pm": 3662,
+  "dup": ""
+ }
+]
