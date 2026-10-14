@@ -80,6 +80,26 @@
   "dup": ""
  },
  {
+  "id": "ev-462850",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-nova-cesta-dvosoban-stan-55-m2-s-vrtom/462850/",
+  "title": "Novo Zagreb, Nova Cesta, dvosoban stan 55 m² s vrtom",
+  "area": "Novo Zagreb",
+  "m2": 55.0,
+  "price": 249000,
+  "cond": "Nepoznato",
+  "first_seen": "2026-10-14",
+  "tel": "+385916022278",
+  "fl": 2,
+  "lift": 1,
+  "yr": 0,
+  "balc": 1,
+  "park": 1,
+  "pm": 4527,
+  "dup": ""
+ },
+ {
   "id": "ev-700362",
   "src": "eurovilla.hr",
   "ag": "Eurovilla",
@@ -257,26 +277,6 @@
   "balc": 1,
   "park": 1,
   "pm": 3911,
-  "dup": ""
- },
- {
-  "id": "ev-496361",
-  "src": "eurovilla.hr",
-  "ag": "Eurovilla",
-  "url": "https://eurovilla.hr/nekretnina/zagreb-strigina-ulica-dvosoban-stan-58-m2-i-garaza-18-m2/496361/",
-  "title": "Novo Zagreb, Štrigina ulica, dvosoban stan 58 m² i garaža 18 m²",
-  "area": "Novo Zagreb",
-  "m2": 58.0,
-  "price": 535000,
-  "cond": "Nepoznato",
-  "first_seen": "2026-10-11",
-  "tel": "+385994754113",
-  "fl": 1,
-  "lift": 1,
-  "yr": 2022,
-  "balc": 1,
-  "park": 1,
-  "pm": 9224,
   "dup": ""
  },
  {
@@ -497,26 +497,6 @@
   "balc": 1,
   "park": 1,
   "pm": 3704,
-  "dup": ""
- },
- {
-  "id": "ev-601148",
-  "src": "eurovilla.hr",
-  "ag": "Eurovilla",
-  "url": "https://eurovilla.hr/nekretnina/zagreb-laniste-komforan-trosoban-stan-67-m2-za-renovaciju/601148/",
-  "title": "Novo Zagreb, Lanište komforan trosoban stan 67 m² za renovaciju",
-  "area": "Novo Zagreb",
-  "m2": 69.0,
-  "price": 185000,
-  "cond": "Nepoznato",
-  "first_seen": "2026-10-11",
-  "tel": "+38598669711",
-  "fl": 2,
-  "lift": 1,
-  "yr": 1962,
-  "balc": 1,
-  "park": 1,
-  "pm": 2681,
   "dup": ""
  },
  {
@@ -797,6 +777,26 @@
   "balc": 1,
   "park": 1,
   "pm": 5152,
+  "dup": ""
+ },
+ {
+  "id": "ev-162660",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-spansko-moderan-trosoban-stan-povrsine-78-78-m2/162660/",
+  "title": "Novogradnja Zagreb, Špansko, moderan trosoban stan površine 78,78 m²",
+  "area": "Novogradnja Zagreb",
+  "m2": 79.0,
+  "price": 436000,
+  "cond": "Novogradnja",
+  "first_seen": "2026-10-14",
+  "tel": "+385916004925",
+  "fl": 1,
+  "lift": 1,
+  "yr": 2023,
+  "balc": 1,
+  "park": 1,
+  "pm": 5519,
   "dup": ""
  }
 ]
