@@ -76,6 +76,25 @@
   "pm": 7614
  },
  {
+  "id": "ev-907946",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-crnomerec-vidovcica-luksuzna-novogradnja-trosoban-stan-penthouse/907946/",
+  "title": "Novogradnja Zagreb, Črnomerec, Vidovčica, luksuzna novogradnja, trosoban stan penthouse",
+  "area": "Novogradnja Zagreb",
+  "m2": 83.0,
+  "price": 540000,
+  "cond": "Novogradnja",
+  "first_seen": "2026-10-18",
+  "tel": "+385913330666",
+  "fl": 1,
+  "lift": 1,
+  "yr": 2028,
+  "balc": 1,
+  "park": 1,
+  "pm": 6506
+ },
+ {
   "id": "ev-423561",
   "src": "eurovilla.hr",
   "ag": "Eurovilla",
@@ -663,24 +682,5 @@
   "balc": 1,
   "park": 1,
   "pm": 9000
- },
- {
-  "id": "ev-507075",
-  "src": "eurovilla.hr",
-  "ag": "Eurovilla",
-  "url": "https://eurovilla.hr/nekretnina/zagreb-odra-trosoban-stan-63-m2-parking-novogradnja/507075/",
-  "title": "Novo Zagreb, Odra, trosoban stan, 63 m², parking, NOVOGRADNJA",
-  "area": "Novo Zagreb",
-  "m2": 63.0,
-  "price": 190260,
-  "cond": "Novogradnja",
-  "first_seen": "2026-10-11",
-  "tel": "+385994497708",
-  "fl": 2,
-  "lift": 1,
-  "yr": 2027,
-  "balc": 1,
-  "park": 1,
-  "pm": 3020
  }
 ]
