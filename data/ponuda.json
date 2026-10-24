@@ -120,6 +120,26 @@
   "dup": ""
  },
  {
+  "id": "ev-733222",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-spansko-atraktivan-cetverosoban-stan-63-m2-22-m2-natkrivene-terase/733222/",
+  "title": "Novo Zagreb, Špansko, atraktivan četverosoban stan 63 m² 22 m² natkrivene terase",
+  "area": "Novo Zagreb",
+  "m2": 63.0,
+  "price": 389000,
+  "cond": "Nepoznato",
+  "first_seen": "2026-10-24",
+  "tel": "+385989343989",
+  "fl": 0,
+  "lift": 1,
+  "yr": 1985,
+  "balc": 1,
+  "park": 1,
+  "pm": 6175,
+  "dup": ""
+ },
+ {
   "id": "ev-626639",
   "src": "eurovilla.hr",
   "ag": "Eurovilla",
