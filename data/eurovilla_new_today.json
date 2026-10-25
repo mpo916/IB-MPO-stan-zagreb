@@ -1,21 +1,21 @@
 [
  {
-  "id": "ev-733222",
+  "id": "ev-445532",
   "src": "eurovilla.hr",
   "ag": "Eurovilla",
-  "url": "https://eurovilla.hr/nekretnina/zagreb-spansko-atraktivan-cetverosoban-stan-63-m2-22-m2-natkrivene-terase/733222/",
-  "title": "Novo Zagreb, Špansko, atraktivan četverosoban stan 63 m² 22 m² natkrivene terase",
-  "area": "Novo Zagreb",
-  "m2": 63.0,
-  "price": 389000,
-  "cond": "Nepoznato",
-  "first_seen": "2026-10-24",
-  "tel": "+385989343989",
-  "fl": 0,
+  "url": "https://eurovilla.hr/nekretnina/sveta-nedjelja-novaki-dvosoban-stan-s-dva-parkirna-mjesta-55-m2-novogradnja/445532/",
+  "title": "Novogradnja Sveta Nedjelja, Novaki dvosoban stan s dva parkirna mjesta 55 m² NOVOGRADNJA",
+  "area": "Novogradnja Sveta Nedjelja",
+  "m2": 55.0,
+  "price": 165000,
+  "cond": "Novogradnja",
+  "first_seen": "2026-10-25",
+  "tel": "+385913330666",
+  "fl": 1,
   "lift": 1,
-  "yr": 1985,
+  "yr": 2026,
   "balc": 1,
   "park": 1,
-  "pm": 6175
+  "pm": 3000
  }
 ]

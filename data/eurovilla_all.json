@@ -114,6 +114,25 @@
   "pm": 5759
  },
  {
+  "id": "ev-445532",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/sveta-nedjelja-novaki-dvosoban-stan-s-dva-parkirna-mjesta-55-m2-novogradnja/445532/",
+  "title": "Novogradnja Sveta Nedjelja, Novaki dvosoban stan s dva parkirna mjesta 55 m² NOVOGRADNJA",
+  "area": "Novogradnja Sveta Nedjelja",
+  "m2": 55.0,
+  "price": 165000,
+  "cond": "Novogradnja",
+  "first_seen": "2026-10-25",
+  "tel": "+385913330666",
+  "fl": 1,
+  "lift": 1,
+  "yr": 2026,
+  "balc": 1,
+  "park": 1,
+  "pm": 3000
+ },
+ {
   "id": "ev-733222",
   "src": "eurovilla.hr",
   "ag": "Eurovilla",
@@ -815,24 +834,5 @@
   "balc": 1,
   "park": 1,
   "pm": 4780
- },
- {
-  "id": "ev-700362",
-  "src": "eurovilla.hr",
-  "ag": "Eurovilla",
-  "url": "https://eurovilla.hr/nekretnina/zagreb-europski-trg-trosoban-novoureden-stan-81-m2/700362/",
-  "title": "Novo Zagreb, Europski trg, trosoban novouređen stan 81 m²",
-  "area": "Novo Zagreb",
-  "m2": 82.0,
-  "price": 730000,
-  "cond": "Nepoznato",
-  "first_seen": "2026-10-13",
-  "tel": "+385916022278",
-  "fl": 1,
-  "lift": 1,
-  "yr": 0,
-  "balc": 1,
-  "park": 1,
-  "pm": 8902
  }
 ]
