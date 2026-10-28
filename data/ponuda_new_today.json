@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "id": "ev-606458",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-podsused-funkcionalan-cetverosoban-stan-77-m2/606458/",
+  "title": "Novo Zagreb, Podsused, funkcionalan četverosoban stan 77 m²",
+  "area": "Novo Zagreb",
+  "m2": 77.0,
+  "price": 280000,
+  "cond": "Nepoznato",
+  "first_seen": "2026-10-28",
+  "tel": "+385915758909",
+  "fl": 4,
+  "lift": 1,
+  "yr": 1985,
+  "balc": 1,
+  "park": 1,
+  "pm": 3636,
+  "dup": ""
+ },
+ {
+  "id": "ev-474134",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-spansko-prekrasan-trosoban-stan-u-novogradnji-85-m2/474134/",
+  "title": "Novogradnja Zagreb, Špansko, prekrasan trosoban stan u novogradnji 85 m²",
+  "area": "Novogradnja Zagreb",
+  "m2": 85.0,
+  "price": 358000,
+  "cond": "Novogradnja",
+  "first_seen": "2026-10-28",
+  "tel": "+385915758909",
+  "fl": 2,
+  "lift": 1,
+  "yr": 0,
+  "balc": 1,
+  "park": 1,
+  "pm": 4212,
+  "dup": ""
+ }
+]
