@@ -114,6 +114,63 @@
   "pm": 5759
  },
  {
+  "id": "ev-314904",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-trg-franje-tudmana-cetverosoban-stan-110-m2-2-garazna-mjesta-spremiste-novogradnja/314904/",
+  "title": "Novogradnja Zagreb, Trg Franje Tuđmana, četverosoban stan 110 m², 2 garažna mjesta, spremište, Novogradnja",
+  "area": "Novogradnja Zagreb",
+  "m2": 110.0,
+  "price": 1099000,
+  "cond": "Novogradnja",
+  "first_seen": "2026-10-31",
+  "tel": "+385977182364",
+  "fl": 1,
+  "lift": 1,
+  "yr": 2025,
+  "balc": 1,
+  "park": 1,
+  "pm": 9991
+ },
+ {
+  "id": "ev-254887",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-maksimir-prekrasan-trosoban-penthouse-s-terasom-80-m2/254887/",
+  "title": "Novo Zagreb, Maksimir, prekrasan trosoban penthouse s terasom, 80 m²",
+  "area": "Novo Zagreb",
+  "m2": 80.0,
+  "price": 375000,
+  "cond": "Nepoznato",
+  "first_seen": "2026-10-31",
+  "tel": "+385916101348",
+  "fl": 3,
+  "lift": 1,
+  "yr": 1937,
+  "balc": 1,
+  "park": 1,
+  "pm": 4688
+ },
+ {
+  "id": "ev-705073",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-donje-svetice-ekskluzivan-moderan-trosoban-stan-77-m2/705073/",
+  "title": "Novogradnja Zagreb, Donje Svetice ekskluzivan moderan trosoban stan 77 m²",
+  "area": "Novogradnja Zagreb",
+  "m2": 77.0,
+  "price": 497900,
+  "cond": "Novogradnja",
+  "first_seen": "2026-10-31",
+  "tel": "+38598669711",
+  "fl": 5,
+  "lift": 1,
+  "yr": 2026,
+  "balc": 1,
+  "park": 1,
+  "pm": 6466
+ },
+ {
   "id": "ev-515782",
   "src": "eurovilla.hr",
   "ag": "Eurovilla",
@@ -520,7 +577,7 @@
   "title": "Novo Zagreb, Projekt Blato, trosoban stan s terasom, 76,50 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 77.0,
-  "price": 283050,
+  "price": 290700,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -529,7 +586,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3676
+  "pm": 3775
  },
  {
   "id": "ev-517117",
@@ -539,7 +596,7 @@
   "title": "Novo Zagreb, Projekt Blato, četverosoban stan s terasom, 92,90 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 93.0,
-  "price": 343730,
+  "price": 353020,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -548,7 +605,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3696
+  "pm": 3796
  },
  {
   "id": "ev-131851",
@@ -558,7 +615,7 @@
   "title": "Novo Zagreb, Projekt Blato, dvosoban stan s lođom, 57,80 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 58.0,
-  "price": 213860,
+  "price": 219640,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -567,7 +624,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3687
+  "pm": 3787
  },
  {
   "id": "ev-717066",
@@ -577,7 +634,7 @@
   "title": "Novo Zagreb, Projekt Blato, dvosoban stan s lođom i vrtom, 53,20 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 53.0,
-  "price": 196840,
+  "price": 202160,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -586,7 +643,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3714
+  "pm": 3814
  },
  {
   "id": "ev-365565",
@@ -596,7 +653,7 @@
   "title": "Novo Zagreb, Projekt Blato, trosoban stan s lođom, 76 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 76.0,
-  "price": 281200,
+  "price": 288800,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -605,7 +662,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3700
+  "pm": 3800
  },
  {
   "id": "ev-377839",
@@ -615,7 +672,7 @@
   "title": "Novo Zagreb, Projekt Blato, trosoban stan s lođom, 77,60 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 78.0,
-  "price": 287120,
+  "price": 294880,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -624,7 +681,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3681
+  "pm": 3781
  },
  {
   "id": "ev-206605",
@@ -634,7 +691,7 @@
   "title": "Novo Zagreb, Projekt Blato, dvosoban stan s lođom i vrtom, 52,60 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 53.0,
-  "price": 194620,
+  "price": 199880,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -643,7 +700,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3672
+  "pm": 3771
  },
  {
   "id": "ev-203848",
@@ -653,7 +710,7 @@
   "title": "Novo Zagreb, Projekt Blato, trosoban stan s lođom, 77 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 77.0,
-  "price": 284900,
+  "price": 292600,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -662,7 +719,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3700
+  "pm": 3800
  },
  {
   "id": "ev-367606",
@@ -672,7 +729,7 @@
   "title": "Novo Zagreb, Projekt Blato, dvosoban stan s lođom i vrtom, 58,80 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 59.0,
-  "price": 217560,
+  "price": 223440,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -681,7 +738,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3687
+  "pm": 3787
  },
  {
   "id": "ev-808755",
@@ -691,7 +748,7 @@
   "title": "Novo Zagreb, Projekt Blato, dvosoban stan s lođom i vrtom, 60,10 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 60.0,
-  "price": 222370,
+  "price": 228380,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -700,7 +757,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3706
+  "pm": 3806
  },
  {
   "id": "ev-933179",
@@ -710,7 +767,7 @@
   "title": "Novo Zagreb, Projekt Blato, četverosoban stan s lođom i vrtom, 104,80 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 105.0,
-  "price": 387760,
+  "price": 398240,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -719,7 +776,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3693
+  "pm": 3793
  },
  {
   "id": "ev-685868",
@@ -729,7 +786,7 @@
   "title": "Novo Zagreb, Projekt Blato, dvosoban stan s lođom i vrtom, 60,50 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 61.0,
-  "price": 223850,
+  "price": 229900,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -738,7 +795,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3670
+  "pm": 3769
  },
  {
   "id": "ev-198763",
@@ -748,7 +805,7 @@
   "title": "Novo Zagreb, Projekt Blato, trosoban stan s lođom, 77,70 m², Novogradnja",
   "area": "Novo Zagreb",
   "m2": 78.0,
-  "price": 287490,
+  "price": 295260,
   "cond": "Novogradnja",
   "first_seen": "2026-10-20",
   "tel": "+385977182364",
@@ -757,7 +814,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 3686
+  "pm": 3785
  },
  {
   "id": "ev-907946",
