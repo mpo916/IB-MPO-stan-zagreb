@@ -120,6 +120,26 @@
   "dup": ""
  },
  {
+  "id": "ev-413543",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-sveti-duh-prevoj-cetverosoban-stan-s-terasom-2-parkinga-i-spremistem/413543/",
+  "title": "Novo Zagreb, Sveti duh, Prevoj, četverosoban stan s terasom, 2 parkinga i spremištem",
+  "area": "Novo Zagreb",
+  "m2": 100.0,
+  "price": 479000,
+  "cond": "Nepoznato",
+  "first_seen": "2026-11-03",
+  "tel": "+385996269535",
+  "fl": 1,
+  "lift": 1,
+  "yr": 2008,
+  "balc": 1,
+  "park": 1,
+  "pm": 4790,
+  "dup": ""
+ },
+ {
   "id": "ev-854440",
   "src": "eurovilla.hr",
   "ag": "Eurovilla",
@@ -447,7 +467,7 @@
   "title": "Novo Zagreb, Nova Cesta, dvosoban stan 55 m² s vrtom",
   "area": "Novo Zagreb",
   "m2": 55.0,
-  "price": 237000,
+  "price": 240000,
   "cond": "Nepoznato",
   "first_seen": "2026-10-14",
   "tel": "+385916022278",
@@ -456,7 +476,7 @@
   "yr": 0,
   "balc": 1,
   "park": 1,
-  "pm": 4309,
+  "pm": 4364,
   "dup": ""
  },
  {
