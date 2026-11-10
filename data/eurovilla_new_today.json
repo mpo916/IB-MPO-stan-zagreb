@@ -1,1 +1,21 @@
-[]
+[
+ {
+  "id": "ev-383549",
+  "src": "eurovilla.hr",
+  "ag": "Eurovilla",
+  "url": "https://eurovilla.hr/nekretnina/zagreb-bundek-centar-luksuzan-dizajnerski-trosoban-stan-73-m2/383549/",
+  "title": "Novogradnja Zagreb, Bundek centar, luksuzan dizajnerski trosoban stan 73 m²",
+  "area": "Novogradnja Zagreb",
+  "m2": 73.0,
+  "price": 630000,
+  "cond": "Novogradnja",
+  "first_seen": "2026-11-10",
+  "tel": "+385997246290",
+  "fl": 4,
+  "lift": 1,
+  "yr": 0,
+  "balc": 1,
+  "park": 1,
+  "pm": 8630
+ }
+]
